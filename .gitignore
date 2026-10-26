@@ -1,0 +1,26 @@
+# Rust
+/target/
+**/*.rs.bk
+Cargo.lock.bak
+
+# Gradle & Kotlin
+.gradle/
+**/.gradle/
+.kotlin/
+**/.kotlin/
+build/
+**/build/
+local.properties
+**/local.properties
+
+# Database wal/shm
+*.db-shm
+*.db-wal
+
+# IDE & OS
+.idea/
+*.iml
+.vscode/
+.DS_Store
+*.swp
+*~

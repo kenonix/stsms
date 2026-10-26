@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>STSMS 일일 업무보고서 - 2026-10-25</title>
+<style>
+  body {
+    font-family: 'Pretendard', 'Malgun Gothic', sans-serif;
+    margin: 20px;
+    color: #111;
+  }
+  h1 { border-bottom: 2px solid #222; padding-bottom: 8px; }
+  .meta-box { background: #f8f9fa; border: 1px solid #dee2e6; padding: 12px; margin-bottom: 16px; }
+  .report-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+  .report-table th, .report-table td { border: 1px solid #333; padding: 8px; text-align: left; font-size: 10.5pt; }
+  .report-table th { background: #e9ecef; }
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .photo-card {
+    border: 1px solid #666;
+    padding: 10px;
+    background: #fafafa;
+    font-size: 9.5pt;
+  }
+  @media print {
+    header, nav, .dnd-handle, .btn-action, .map-controls {
+      display: none !important;
+    }
+    @page {
+      size: A4 portrait;
+      margin: 15mm;
+    }
+    body {
+      background: #ffffff !important;
+      color: #000000 !important;
+      font-size: 11pt;
+    }
+    .report-table tr {
+      page-break-inside: avoid;
+    }
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+      page-break-inside: avoid;
+    }
+  }
+</style>
+</head>
+<body>
+  <h1>[STSMS] 일일 업무 수행 보고서 (A4 Print Specification)</h1>
+  <div class="meta-box">
+    <p><strong>보고 일자:</strong> 2026-10-25 &nbsp;|&nbsp; <strong>작성자:</strong> Nix (시스템 엔지니어)</p>
+    <p><strong>대상 프로젝트 동선(Subject):</strong> 수도권 IoT 센서 및 네트워크 인프라 순회 점검 (총 42.8km, 110분)</p>
+  </div>
+  <h2>1. 당일 세션별 업무 수행 내역</h2>
+  <table class="report-table">
+    <thead>
+      <tr>
+        <th>업무ID</th>
+        <th>세션</th>
+        <th>업무명 / D-Day 태그</th>
+        <th>상태</th>
+        <th>실적 / 결과 요약</th>
+        <th>현장 특이사항</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>TASK-001</td><td>오전 (AM)</td><td><strong>서초 센서 허브 4개소 정밀 교정 및 펌웨어 v2.4 패치</strong><br/><small>[~장비점검] : D-21 = 센서 교정</small></td><td>완료(COMPLETED)</td><td>4 / 4건 (4개소 센서 오차 0.08% 교정 완료)</td><td>오전 9시 이전 통행량 적을 때 작업 권장</td></tr>
+<tr><td>TASK-002</td><td>오전 (AM)</td><td><strong>판교 IDC 메인 L3 스위치 백업 라인 바이패스 시험</strong><br/><small>[~장비점검] : D-21 = 스위치 교체</small></td><td>진행중(IN_SESSION)</td><td>2 / 2건 (1/2차 절체 0.02초 이내 무중단 통과 완료)</td><td>보안 출입증 사전 데스크 승인 필수. 랙 14번 전면 사진 촬영 필요.</td></tr>
+<tr><td>TASK-004</td><td>오전 (AM)</td><td><strong>상암 디지털미디어시티 보안 감사 로그 무결성 대조</strong><br/><small>[~정기감사] : D-10 = 로그 대조</small></td><td>완료(COMPLETED)</td><td>12 / 12건 (3분기 IDS 보안 로그 12건 SHA-256 무결성 검증 완료)</td><td>-</td></tr>
+<tr><td>TASK-005</td><td>미배정</td><td><strong>2026 스마트 인프라 운영 혁신 종합 보고서 초안 작성</strong><br/><small>[~보고회] : D-03 = 최종 보고</small></td><td>예정(SCHEDULED)</td><td>-</td><td>-</td></tr>
+
+    </tbody>
+  </table>
+  <h2>2. 현장 사진 및 파일시스템 증빙 목록</h2>
+  <div class="photo-grid">
+    <div class="photo-card"><strong>[TASK-001] MESSENGER_PHOTO (LOCAL_FS)</strong><br/>파일명: seocho_sensor_hub_photo.jpg<br/>경로: <code>storage_root/2026/10/25/TASK-001/seocho_sensor_hub_photo.jpg</code><br/>크기: 189 bytes | SHA-256: <code>e8e6c44da4cb2262f0db3719f6f150c8621ebd3bb7cc6267dd3eb0eb6238bfc9</code></div>
+<div class="photo-card"><strong>[TASK-001] MESSENGER_PHOTO (LOCAL_FS)</strong><br/>파일명: seocho_sensor_hub_photo.jpg<br/>경로: <code>storage_root/2026/10/25/TASK-001/seocho_sensor_hub_photo.jpg</code><br/>크기: 189 bytes | SHA-256: <code>e8e6c44da4cb2262f0db3719f6f150c8621ebd3bb7cc6267dd3eb0eb6238bfc9</code></div>
+<div class="photo-card"><strong>[TASK-002] MESSENGER_PHOTO (DISCORD)</strong><br/>파일명: rack14_bypass_led_ok.jpg<br/>경로: <code>/stsms_storage_root/evidence/rack14_bypass_led_ok.jpg</code><br/>크기: 248912 bytes | SHA-256: <code>e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</code></div>
+<div class="photo-card"><strong>[TASK-004] MESSENGER_PHOTO (KAKAO)</strong><br/>파일명: kakao_sangam_ids_proof.jpg<br/>경로: <code>/home/kenonix/gits/stsms/storage_root/2026/10/25/TASK-004/kakao_sangam_ids_proof.jpg</code><br/>크기: 65 bytes | SHA-256: <code>b4d0a6e6a870ce5603de6ba63c302e0328a4e81ad8b9a0f2b2ed725cfbc9414b</code></div>
+<div class="photo-card"><strong>[TASK-004] MESSENGER_PHOTO (KAKAO)</strong><br/>파일명: kakao_sangam_ids_proof.jpg<br/>경로: <code>/home/kenonix/gits/stsms/storage_root/2026/10/25/TASK-004/kakao_sangam_ids_proof.jpg</code><br/>크기: 65 bytes | SHA-256: <code>5641e602c13833872428621ba6b5161ed5753b67431129d2b7ff805b47408f7a</code></div>
+
+  </div>
+</body>
+</html>
